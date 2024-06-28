@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+
+</head>
+
+<body>
+   <p></p>
+   <div id="signUp_container">
+    <h1 data-aos="fade-up"><i class="icon fas fa-user-plus"></i> Sign Up</h1>
+    <input type="email" id="email" placeholder="Email" data-aos="fade-up" data-aos-delay="100">
+    <input type="password" id="password" placeholder="Password" data-aos="fade-up" data-aos-delay="200">
+    <button id="signUp_btn" data-aos="fade-up" data-aos-delay="300">Sign Up</button>
+    <br>
+    <hr data-aos="fade-up" data-aos-delay="400">
+    <h1 data-aos="fade-up" data-aos-delay="500"><i class="icon fas fa-sign-in-alt"></i> Login</h1>
+    <input type="email" id="email_Login" placeholder="Email" data-aos="fade-up" data-aos-delay="600">
+    <input type="password" id="password_Login" placeholder="Password" data-aos="fade-up" data-aos-delay="700">
+    <button id="Login_btn" data-aos="fade-up" data-aos-delay="800">Login</button>
+</div>
+
+<div id="Logout_container" data-aos="fade-up">
+    <h1 id="user_Email"></h1>
+    <button id="logout" data-aos="fade-up" data-aos-delay="200"><i class="icon fas fa-sign-out-alt"></i> Logout</button>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        once: true // only once animation
+    });
+</script>
+
+<script src="app.js" type="module"></script>
+
+
+</body>
+
+</html>
+

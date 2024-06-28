@@ -1,0 +1,100 @@
+/* Reset some default margin and padding for the entire page */
+body, h1, h2, h3, p, input, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif,Arial, sans-serif;
+}
+
+/* Basic styling for the whole page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#signUp_container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+#signUp_container h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#signUp_container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#signUp_container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#signUp_container button:hover {
+    background-color: #0056b3;
+}
+
+#Logout_container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+#Logout_container h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+#Logout_container #user_Email {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 18px;
+}
+
+#Logout_container button {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#Logout_container button:hover {
+    background-color: #c82333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #signUp_container {
+        max-width: 100%;
+    }
+}
